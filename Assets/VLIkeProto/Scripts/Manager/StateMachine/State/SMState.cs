@@ -1,9 +1,8 @@
 using UnityEngine;
-public abstract class State<T> where T : State<T>
+public abstract class SMState
 {
-    protected StatesMachine<T> _machine;
-
-    public State(StatesMachine<T> machine)
+    protected StatesMachine _machine;
+    protected SMState(StatesMachine machine)
     {
         _machine = machine;
     }

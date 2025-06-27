@@ -1,36 +1,38 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-    public class StatesMachine<T> :MonoBehaviour where T : State<T> //TryMono but mb add to manager
+public abstract class StatesMachine:MonoBehaviour
     {
-        private T _currentState;
-        private Dictionary<Type,T> _states = new Dictionary<Type,T>();
+        protected SMState _currentState; 
+        protected Dictionary<Type,SMState> _states = new Dictionary<Type,SMState>();
         
-        public void RegisterState<TState>(TState state) where TState : T
+        public void RegisterState<T>(T state) where T:SMState
         {
-            Type stateType = typeof(TState);
+            Type stateType = typeof(T);
             if (_states.ContainsKey(stateType)) return;
             _states[stateType] = state;
+            Debug.Log(stateType.Name + " registered");
         }
 
-        public void ChangeState<TState>() where TState : T
+        public void ChangeState<T>() where T : SMState
         {
-            Type stateType = typeof(TState);
-            if (_states.TryGetValue(stateType, out T state))
+            Type stateType = typeof(T);
+            if (_states.TryGetValue(stateType, out var state))
             {
                 if(state==_currentState)return;
                 _currentState?.Exit();
                 _currentState=state;
                 _currentState.Enter();
+                Debug.Log(stateType.Name + " entered");
             }
             else
             {
-                //TODO add register
+                //TODO
+                //add register
                 throw new Exception("NO regestraterState");
             }
         }
+        
 
         public virtual void Update()
         {

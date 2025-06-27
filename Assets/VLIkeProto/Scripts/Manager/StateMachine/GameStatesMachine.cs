@@ -1,6 +1,6 @@
 using System;
 
-public class GameStatesMachine : StatesMachine<GameStates>
+public class GameStatesMachine : StatesMachine
 {
     public static GameStatesMachine Instance;
 
@@ -15,10 +15,15 @@ public class GameStatesMachine : StatesMachine<GameStates>
         {
             Destroy(gameObject);
         }
+
+        InitializationStateMachine();
     }
-    
-    
-    
-    
+
+    private void InitializationStateMachine()
+    {
+        RegisterState(new GameState(this));
+        RegisterState(new ShopState(this));
+        ChangeState<GameState>();
+    }
 }
 

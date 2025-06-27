@@ -7,7 +7,15 @@
     <list default="true" id="e6da1292-9e0a-4da6-94dc-d769020046e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VLikeProto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VLikeProto/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/Bootstrap/GameBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/Bootstrap/GameBootstrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/GameStatesMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/GameStatesMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/State/GameStates.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/State/GameStates.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/State/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/State/SMState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/State/State.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/State/SMState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/StatesMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Scripts/Manager/StateMachine/StatesMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Stuff/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Stuff/InputSystem_Actions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VLIkeProto/Stuff/InputSystem_Actions.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VLIkeProto/Stuff/InputSystem_Actions.inputactions.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +45,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -102,6 +111,8 @@
       <workItem from="1750944811116" duration="593000" />
       <workItem from="1750948572372" duration="2690000" />
       <workItem from="1750951342386" duration="2211000" />
+      <workItem from="1750969006154" duration="5902000" />
+      <workItem from="1751028468126" duration="4851000" />
     </task>
     <servers />
   </component>
